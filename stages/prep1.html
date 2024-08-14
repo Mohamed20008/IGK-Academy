@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 1</title>
+    <link rel="website icon" href="logo.png">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<style>
+    body{
+        height: 98vh;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns:repeat(3,auto) ;
+        column-gap: 10px;
+
+    }
+    .course{
+        background-color: rgba(190, 190, 190, 0.403);
+        /* height: 95vh; */
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 35px;
+        font-family: "Playwrite PL", cursive;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(1, 82, 1);
+        text-decoration: none;
+
+
+
+    }
+    .cat{
+        display: none;
+    }
+    .course:hover{
+        transition: 2s;
+        box-shadow: 10px 10px 10px 1px gray;
+        img{
+            transition-duration:2s ;
+            display: inline;
+        }
+        
+    }
+    @media (min-width:200px) and (max-width:839px) {
+        .grid{
+        display: grid;
+        grid-template-columns:repeat(1,auto) ;
+        grid-template-rows:repeat(3, 200px);
+        row-gap: 20px;
+        column-gap: 10px;
+        gap: 20px;
+        
+    }
+        
+        .course:hover{
+           .cat{
+            display: none;
+           }
+        }
+        
+    }
+    
+    @media (min-width:840px) and (max-width:4000px) {
+        .grid{
+            display: grid;
+            grid-template-columns:repeat(3,auto) ;
+            column-gap: 10px;
+            height: 95vh;
+                
+            
+        }
+    }
+    a{
+        text-decoration: none;
+        color:rgb(1, 82, 1);
+    }
+    button,h1{
+        background-color: transparent;
+        border:none ;
+        font-family: "Playwrite PL", cursive;
+        font-size: 32px;
+        font-weight: bold;
+        color:rgb(1, 82, 1);
+
+    }
+    .gridt{
+        display: grid;
+        grid-template-rows: repeat(2,400px);
+    }
+</style>
+<body>
+    <div class="grid">
+        <div role="button"href='#' class="course"><button id="myButton" href="#" >English
+            <br><br><br>
+            <img class="cat" src="cat (2).png" alt="">
+        </button>
+        </div>
+        <div class="course"><a href="#">Science
+            <br><br><br>
+            <img class="cat" src="cat (2).png" alt="">
+            
+        </a>
+        </div>
+        <div class="course"><a href="#">Math
+            <br><br><br>
+            <img class="cat" src="cat (2).png" alt="">
+            
+        </a>
+        </div>
+        
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

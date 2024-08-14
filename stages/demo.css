@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+body{
+   
+    background-image: linear-gradient(to bottom right ,rgba(235, 138, 77, 0.651),rgb(118, 222, 109), transparent);
+    background-position: center;
+}
+.grid{
+display: grid;
+grid-template-columns:repeat(3,auto) ;
+column-gap: 10px;
+
+}
+.course{
+background-color: rgba(190, 190, 190, 0.403);
+/* height: 95vh; */
+padding: 10px;
+border-radius: 10px;
+font-size: 35px;
+font-family: "Playwrite PL", cursive;
+text-align: center;
+font-weight: bold;
+color: rgb(1, 82, 1);
+text-decoration: none;
+
+
+
+}
+.course:hover{
+transition: .3s;
+box-shadow: 10px 10px 10px 1px gray;
+
+}
+@media (min-width:200px) and (max-width:839px) {
+.grid{
+display: grid;
+grid-template-columns:repeat(1,auto) ;
+grid-template-rows:repeat(3, 1fr);
+row-gap: 20px;
+column-gap: 10px;
+gap: 20px;
+}
+
+
+}
+
+@media (min-width:840px) and (max-width:4000px) {
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3,auto) ;
+    column-gap: 10px;
+    height: 95vh;
+        
+    
+}
+}
